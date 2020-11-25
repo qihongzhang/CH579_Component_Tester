@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+".\objects\startup_armcm0.o"
+".\objects\ch57x_adc.o"
+".\objects\ch57x_clk.o"
+".\objects\ch57x_flash.o"
+".\objects\ch57x_gpio.o"
+".\objects\ch57x_int.o"
+".\objects\ch57x_lcd.o"
+".\objects\ch57x_pwm.o"
+".\objects\ch57x_pwr.o"
+".\objects\ch57x_spi0.o"
+".\objects\ch57x_spi1.o"
+".\objects\ch57x_sys.o"
+".\objects\ch57x_timer0.o"
+".\objects\ch57x_timer1.o"
+".\objects\ch57x_timer2.o"
+".\objects\ch57x_timer3.o"
+".\objects\ch57x_uart0.o"
+".\objects\ch57x_uart1.o"
+".\objects\ch57x_uart2.o"
+".\objects\ch57x_uart3.o"
+".\objects\ch57x_usbdev.o"
+".\objects\main.o"
+--library_type=microlib --strict --scatter ".\Objects\Template.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Template.map" -o .\Objects\Template.axf
